@@ -1,0 +1,8 @@
+name: output workflow
+on: workflow_dispatch
+jobs:
+  Info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Getting repo info
+        run: echo "This is the repository: ${{ github.repository }}"
