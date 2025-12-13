@@ -1,8 +1,14 @@
-name: Output workflow
-on: workflow_dispatch
+name: Output Workflow
+
+on:
+  workflow_dispatch:  # Trigger manually
+
 jobs:
   Info:
     runs-on: ubuntu-latest
     steps:
+      - name: Print full GitHub context
+        run: echo "Context: ${{ toJson(github) }}"
+
       - name: Getting repo info
         run: echo "Repository: ${{ github.repository }}"
