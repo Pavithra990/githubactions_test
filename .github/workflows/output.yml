@@ -9,6 +9,5 @@ jobs:
     steps:
       - name: Print full GitHub context
         run: echo "Context: ${{ toJson(github) }}"
-
       - name: Getting repo info
-        run: echo "Repository: ${{ github.repository }}"
+        run: echo "Repository:${{ github.repository }}"
