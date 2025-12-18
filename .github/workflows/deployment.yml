@@ -42,11 +42,11 @@ jobs:
       - name: Install the node js
         uses: actions/setup-node@v6
         with:
-          node-version: 
+          node-version: 18 
       - name: download dependencies 
         uses: actions/download-artifact@v6
         with:
-          name: build_file
+          name: build_files
           path: downloaded_files/
       - name: Install the dependencies
         run: | 
