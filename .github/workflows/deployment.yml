@@ -42,7 +42,12 @@ jobs:
       - name: Install the node js
         uses: actions/setup-node@v6
         with:
-          node-version: 18
+          node-version: 
+      - name: download dependencies 
+        uses: actions/upload-artifact@v6
+        with:
+          name: download artifacts
+          path: downloaded_files/
       - name: Install the dependencies
         run: | 
             npm ci
