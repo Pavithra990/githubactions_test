@@ -46,7 +46,7 @@ jobs:
       - name: download dependencies 
         uses: actions/download-artifact@v6
         with:
-          name: download artifacts
+          name: build_file
           path: downloaded_files/
       - name: Install the dependencies
         run: | 
