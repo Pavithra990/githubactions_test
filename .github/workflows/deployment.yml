@@ -32,7 +32,7 @@ jobs:
       uses: actions/upload-artifact@v6
       with:
         name: build_files
-        path: build/
+        path: dist/
   DeployJob:
     needs: buildJob
     runs-on: ubuntu-latest
